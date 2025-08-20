@@ -266,6 +266,13 @@ body {
     .nav-right .btn {
         margin: 0.5em 0;
     }
+    .btn {
+        font-size: 1.1em;
+        padding: 0.8em 1.2em;
+        border-radius: 8px;
+        width: 100%;           /* Make buttons full width */
+        justify-content: center;
+    }
 }
 
 /* ---------- Language Switcher ---------- */
@@ -283,7 +290,6 @@ body {
   border-radius: 2px;
   transition: transform 0.2s ease;
   display: block;
-  vertical-align: middle;
   margin: 0;
 }
 .lang-switcher img.active {
