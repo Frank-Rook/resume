@@ -85,7 +85,9 @@ li{
 }
 
 #qualifications--list{
-    list-style: none;
+    border-left: 1px solid var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 #wrapper--techstack__items{
@@ -146,7 +148,6 @@ body.dark {
     border-left: 1px solid var(--mainBorderColor);
     margin-top: 3em;
     margin-bottom: 3em;
-    padding-left: 2em;
 }
 
 .line-break{
@@ -442,14 +443,6 @@ html, body {
   margin: 0 auto;
 }
 
-/* Hover colors for About and Contact buttons */
-a.btn[href*="about"]:hover {
-  background-color: #4a90e2;
-}
-
-a.btn[href*="contact"]:hover {
-  background-color: #4a90e2;
-}
 
 #scrollTopBtn {
   position: fixed;
