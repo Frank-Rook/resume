@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Veselko Ivanovic</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles/main.css">
+
+  
+</head>
+
+<header class="topbar" role="banner">
+  <div class="topbar-inner">
+    <!-- Right side -->
+    <div class="nav-right">
+
+      <!-- 🌍 Language Switcher with Flags -->
+      <div class="lang-switcher">
+        <img src="./assets/flags/de.png" alt="Deutsch" data-lang="de">
+        <img src="./assets/flags/en.png" alt="English" data-lang="en">
+        <img src="./assets/flags/hr.png" alt="Hrvatski" data-lang="hr">
+      </div>
+
+      <!-- 🌙/🌞 Theme Toggle -->
+      <button class="theme-toggle-oval" id="themeToggle" aria-label="Toggle theme">
+        <span class="oval-indicator">☀️</span>
+      </button>
+    </div>
+  </div>
+</head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Go Back</a>
+            <h1> <a href="">AGROPROMET </a></h1>
+
+            <ul>
+                <li>What is Lorem Ipsum?</li>
+                <li>Why do we use it?</li>
+            </ul>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+    </body>
+</html>
+
+
+<!-- Scripts -->
+<script src="translations.js"></script>
+<script src="main.js"></script>
+<script>
+  // ---------- Theme Toggle Logic ----------
+  const themeToggle = document.getElementById("themeToggle");
+  const indicator = themeToggle.querySelector(".oval-indicator");
+
+  function setTheme(mode) {
+    document.body.classList.toggle("dark", mode === "dark");
+    themeToggle.classList.toggle("dark", mode === "dark");
+    indicator.textContent = mode === "dark" ? "🌙" : "☀️";
+    localStorage.setItem("theme", mode);
+  }
+
+  // Load saved theme or default to light
+  const savedTheme = localStorage.getItem("theme") || "light";
+  setTheme(savedTheme);
+
+  themeToggle.addEventListener("click", () => {
+    const newTheme = document.body.classList.contains("dark") ? "light" : "dark";
+    setTheme(newTheme);
+  });
+</script>
+<!-- Floating Home Button -->
+</body>
+</html>
+
+<style>
+/* Add this to your main.css or in a <style> block outside the form styles */
+body {
+  padding-bottom: 3rem;
+}
+
+#container--main {
+  padding-bottom: 3rem;
+}
+</style>

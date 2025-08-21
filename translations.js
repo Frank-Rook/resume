@@ -28,11 +28,12 @@ const translations = {
     projects: "Projekte & Erfolge",
     p1: "🏆 Erfolgreich abgeschlossenes, von der EU gefördertes Training von Kindern mit CircuitMess-Geräten.",
     p2: "🏆 Installation des Netzwerks für ein Unternehmen mit über 200 Mitarbeitern.",
-    contactTitle: "Kontakt",
+    contactTitle: "Kontakt mich",
     contactName: "Name",
     contactEmail: "E-Mail",
     contactMessage: "Nachricht",
-    contactSend: "Nachricht senden"
+    contactSend: "Nachricht senden",
+    contactText: "Wenn Sie Fragen haben, Angebote haben oder einfach nur Kontakt aufnehmen möchten, zögern Sie bitte nicht, Kontakt mit mir aufzunehmen. Ich bemühe mich, schnell zu antworten.",
   },
 
   en: {
@@ -69,6 +70,7 @@ const translations = {
     contactEmail: "Email",
     contactMessage: "Message",
     contactSend: "Send Message",
+    contactText: "If you have any questions, offers, or just want to get in touch, please don't hesitate to contact me. I strive to respond quickly."
   },
 
   hr: {
@@ -105,5 +107,6 @@ const translations = {
     contactEmail: "E-mail",
     contactMessage: "Poruka",
     contactSend: "Pošalji poruku",
+    contactText: "Ako imate bilo kakvih pitanja, ponuda ili jednostavno želite stupiti u kontakt, slobodno me kontaktirajte. Trudim se odgovoriti brzo."
   }
 };

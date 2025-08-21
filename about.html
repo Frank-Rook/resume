@@ -10,19 +10,11 @@
 
   
 </head>
-<body>
 
 <header class="topbar" role="banner">
   <div class="topbar-inner">
-    <!-- Left side -->
-    <div class="nav-left">
-      <a class="btn btn--primary" href="./index.html"> <span data-translate="home">Home</span></a>
-    </div>
-
     <!-- Right side -->
     <div class="nav-right">
-      <a class="btn" href="./about.html" data-translate="about">About me</a>
-      <a class="btn" href="./contact.html" data-translate="contact">Contact</a>
 
       <!-- 🌍 Language Switcher with Flags -->
       <div class="lang-switcher">
@@ -37,9 +29,20 @@
       </button>
     </div>
   </div>
-</header>
+</head>
+<body>
+         
+  <div id="container--main">
+    <p>Hello, my name is Veselko, and I am a passionate educator and advocate for hands-on learning experiences. I believe in the power of technology to inspire creativity and critical thinking in students. My goal is to create engaging and interactive learning environments that empower learners to explore and innovate.
+In my free time, I like to work out, train martial arts, and explore new technologies.</p>
+  </div>
+  <div class="about-btn-wrapper">
+  <a class="btn about-btn" href="./contact.html" data-translate="contact">Contact me</a>
+</div>
 
-
+<a class="floating-home-btn" href="./index.html" aria-label="Home">
+  <span aria-hidden="true">🏠</span>
+</a>
 
 <!-- Scripts -->
 <script src="translations.js"></script>
@@ -65,5 +68,17 @@
     setTheme(newTheme);
   });
 </script>
+<!-- Floating Home Button -->
 </body>
 </html>
+
+<style>
+/* Add this to your main.css or in a <style> block outside the form styles */
+body {
+  padding-bottom: 3rem;
+}
+
+#container--main {
+  padding-bottom: 3rem;
+}
+</style>
