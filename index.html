@@ -82,10 +82,10 @@ div {text-align: center;}
       <strong data-translate="job1_title">🚧 IT techniker ● Informatički Centar d.o.o., Županja, Kroatien</strong>
       <p data-translate="job1_date">02/2022 - 04/2025</p>
       <ul>
-        <li data-translate="job1_d1">Installierung, Wartung und Reparatur ...</li>
-        <li data-translate="job1_d2">Bereitstellung von technischem Support ...</li>
-        <li data-translate="job1_d3">Erstellung und Implementierung ...</li>
-        <li data-translate="job1_d4">Unterstützung bei der Planung ...</li>
+        <p data-translate="job1_d1">Installierung, Wartung und Reparatur ...</p>
+        <p data-translate="job1_d2">Bereitstellung von technischem Support ...</p>
+        <p data-translate="job1_d3">Erstellung und Implementierung ...</p>
+        <p data-translate="job1_d4">Unterstützung bei der Planung ...</p>
       </ul>
     </div>
 
@@ -96,11 +96,11 @@ div {text-align: center;}
       <p data-translate="job2_date">01/2020 - 07/2021</p>
       <p data-translate="job2_intro">Unterstützte alle Aspekte der Firma ...</p>
       <ul>
-        <li data-translate="job2_d1">Tägliche Schichtarbeit im Verkauf</li>
-        <li data-translate="job2_d2">Computerwartung</li>
-        <li data-translate="job2_d3">Internetbanking</li>
-        <li data-translate="job2_d4">Warenabholung/Beschaffung</li>
-        <li data-translate="job2_d5">Jährliche Inventur und Steuerberechnung</li>
+        <p data-translate="job2_d1">Tägliche Schichtarbeit im Verkauf</p >
+        <p data-translate="job2_d2">Computerwartung</p>
+        <p data-translate="job2_d3">Internetbanking</p>
+        <p data-translate="job2_d4">Warenabholung/Beschaffung</p>
+        <p data-translate="job2_d5">Jährliche Inventur und Steuerberechnung</p>
       </ul>
     </div>
   </section>
@@ -123,7 +123,27 @@ div {text-align: center;}
       <a class="btn" href="./about.html" data-translate="about">About me</a>
       <a class="btn" href="./contact.html" data-translate="contact">Contact</a>
 </div>
+
+<button id="scrollTopBtn" aria-label="Scroll to top"></button>
+
 <!-- Scripts -->
+ <script> // Scroll to Top button logic
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) { // show after 300px
+    scrollTopBtn.style.display = "flex";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});</script>
 <script src="translations.js"></script>
 <script src="main.js"></script>
 <script>

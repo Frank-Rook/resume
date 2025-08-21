@@ -144,11 +144,9 @@ body.dark {
 
 .card--work-history{
     border-left: 1px solid var(--mainBorderColor);
-    border-right: 1px solid var(--mainBorderColor);
     margin-top: 3em;
     margin-bottom: 3em;
     padding-left: 2em;
-    padding-right: 2em;
 }
 
 .line-break{
@@ -452,3 +450,39 @@ a.btn[href*="about"]:hover {
 a.btn[href*="contact"]:hover {
   background-color: #4a90e2;
 }
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 80px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  display: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2.2rem;   /* big and bold */
+  line-height: 1;
+}
+
+#scrollTopBtn::before {
+  content: "⮝";       /* thick, filled arrow */
+  display: block;
+}
+
+#scrollTopBtn:hover {
+  background: #4a90e2;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
