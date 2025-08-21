@@ -108,8 +108,8 @@
 <a class="floating-home-btn" href="./index.html" aria-label="Home">
   <span aria-hidden="true">🏠</span>
 </a>
-<div>
-        <a class="btn" href="./about.html" data-translate="about">About me</a>
+<div class="about-btn-wrapper">
+  <a class="btn about-btn" href="./about.html" data-translate="about">About me</a>
 </div>
 <!-- Scripts -->
 <script src="translations.js"></script>
@@ -135,5 +135,17 @@
     setTheme(newTheme);
   });
 </script>
+
+<style>
+  /* Add this to your main.css or in a <style> block outside the form styles */
+body {
+  padding-bottom: 8px;
+}
+
+#container--main {
+  padding-bottom: 8px;
+}
+</style>
+
 </body>
 </html>
