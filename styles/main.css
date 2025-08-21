@@ -266,25 +266,14 @@ body {
         flex-direction: column;
         align-items: stretch;
     }
-    .nav-left, .nav-right {
+    .nav-left {
         flex-direction: column;
         align-items: stretch;
     }
-    .nav-left .btn,
-    .nav-right .btn {
-        margin: 0.5em 0;
-    }
-    .btn {
-        font-size: 1.1em;
-        padding: 0.8em 1.2em;
-        border-radius: 8px;
-        width: 100%;           /* Make buttons full width */
-        justify-content: center;
-    }
     .nav-right {
-        flex-direction: row !important; /* always horizontal */
-        justify-content: space-between;
+        flex-direction: row !important; /* force horizontal layout */
         align-items: center;
+        justify-content: space-between;
         width: 100%;
         gap: 1em;
     }
