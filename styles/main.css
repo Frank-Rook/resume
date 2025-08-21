@@ -252,6 +252,14 @@ body {
     margin-right: 0;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* pushes children to far left and right */
+    width: 100%;
+    gap: 1em;
+}
+
 /* For vertical stacking on small screens */
 @media (max-width: 600px) {
     .topbar-inner {
@@ -272,6 +280,13 @@ body {
         border-radius: 8px;
         width: 100%;           /* Make buttons full width */
         justify-content: center;
+    }
+    .nav-right {
+        flex-direction: row !important; /* always horizontal */
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 1em;
     }
 }
 
@@ -386,5 +401,31 @@ html, body {
 .contact-title {
   text-align: center;
   margin: 2rem 0 1.5rem;
+}
+
+.floating-home-btn {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  width: 56px;
+  height: 56px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  z-index: 9999; /* ensures it's above everything */
+  border: none;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.floating-home-btn:hover {
+  background: #0da2b8;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.22);
 }
 
