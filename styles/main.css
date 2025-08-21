@@ -418,3 +418,21 @@ html, body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.22);
 }
 
+.about-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-btn {
+  width: 80vw;         /* Takes up 60% of the viewport width */
+  max-width: 435px;    /* Optional: limit max size on large screens */
+  min-width: 180px;    /* Optional: minimum size for small screens */
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1em 0;
+  border-radius: 8px;
+  padding-left: 1em;
+}
