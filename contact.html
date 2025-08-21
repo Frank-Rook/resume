@@ -13,15 +13,8 @@
 <body>
 <header class="topbar" role="banner">
   <div class="topbar-inner">
-    <!-- Left side -->
-    <div class="nav-left">
-      <a class="btn btn--primary" href="./index.html"> <span data-translate="home">Home</span></a>
-    </div>
-
     <!-- Right side -->
     <div class="nav-right">
-      <a class="btn" href="./about.html" data-translate="about">About me</a>
-      <a class="btn" href="./contact.html" data-translate="contact">Contact</a>
 
       <!-- 🌍 Language Switcher with Flags -->
       <div class="lang-switcher">
@@ -38,8 +31,11 @@
   </div>
 </head>
 <body>
-<div id="container--main">
+  <div id="container--main">
   <h1 class="contact-title" data-translate="contactTitle">Contact Me</h1>
+  <div> 
+      <p id="bio" data-translate="contactText">Wenn Sie Fragen haben, Angebote haben oder einfach nur Kontakt aufnehmen möchten, zögern Sie bitte nicht, Kontakt mit mir aufzunehmen. Ich bemühe mich, schnell zu antworten.</p>
+</div>
   <form class="contact-form" action="https://formspree.io/f/xblkvjok" method="POST">
       <style>
     /* Contact Form */
@@ -109,7 +105,12 @@
     <button type="submit" data-translate="contactSend">Send Message</button>
   </form>
 </div>
-
+<a class="floating-home-btn" href="./index.html" aria-label="Home">
+  <span aria-hidden="true">🏠</span>
+</a>
+<div>
+        <a class="btn" href="./about.html" data-translate="about">About me</a>
+</div>
 <!-- Scripts -->
 <script src="translations.js"></script>
 <script src="main.js"></script>
