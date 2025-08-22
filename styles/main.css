@@ -36,11 +36,6 @@ li{
     padding: 1em;
 }
 
-.section--page{
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
 #wrapper--hero{
     display: flex;
     align-items: center;
@@ -144,7 +139,6 @@ body.dark {
 .card--work-history{
     border-left: 1px solid var(--mainBorderColor);
     margin-top: 3em;
-    margin-bottom: 3em;
 }
 
 .line-break{
@@ -217,7 +211,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.topbar-inner2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .nav-left, .nav-right {
