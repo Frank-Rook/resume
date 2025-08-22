@@ -10,7 +10,9 @@
 }
 
 body{
-    background-color: var(--mainBgColor);            
+    background-color: var(--mainBgColor); 
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 p, span, li{
@@ -84,17 +86,12 @@ li{
     font-size: 0.9em;
 }
 
-#qualifications--list{
-    border-left: 1px solid var(--mainBorderColor);
-    margin-top: 3em;
-    margin-bottom: 3em;
-}
-
 #wrapper--techstack__items{
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
     font-size: 0.9em;
+    justify-content: center;
 }
 
 :root {
@@ -442,7 +439,6 @@ html, body {
   display: block;
   margin: 0 auto;
 }
-
 
 #scrollTopBtn {
   position: fixed;
