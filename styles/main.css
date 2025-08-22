@@ -229,6 +229,7 @@ a.btn, .btn {
     text-decoration: none;
 }
 
+}
 
 .btn * {
     color: var(--btn-text) !important;
@@ -301,8 +302,9 @@ body {
 .nav-right {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* pushes children to far left and right */
+    width: 100%;
     gap: 1em;
-
 }
 
 /* For vertical stacking on small screens */
@@ -329,6 +331,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-left: 1rem;
 }
 .lang-switcher img {
   width: 32px;
@@ -402,6 +405,13 @@ body {
 .nav-right, .nav-left {
   display: flex;
   align-items: center;
+}
+
+/* --- Alignment Fix: normalize buttons, flags, and toggle --- */
+.nav-right {
+  display: flex;
+  align-items: center;  
+  gap: 0.5rem;
 }
 
 .btn,
