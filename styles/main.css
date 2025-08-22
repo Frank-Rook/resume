@@ -62,7 +62,7 @@ li{
     color: var(--mainTextColor);
 }
 
-#socials--list{
+#s--list{
     display: flex;
     justify-content: space-between;
     column-gap: 1em;
