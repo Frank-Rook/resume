@@ -191,6 +191,46 @@ a.btn, .btn {
     background: var(--btn-bg);
 }
 
+.index-about-btn {
+    color: var(--btn-text) !important;
+    background: var(--btn-bg);
+    width: 40vw;
+    max-width: 200px;  
+    min-width: 20px;    
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.index-contact-btn {
+    color: var(--btn-text) !important;
+    background: var(--btn-bg);
+    width: 40vw;
+    max-width: 200px;  
+    min-width: 20px;    
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+}
+
 .btn * {
     color: var(--btn-text) !important;
 }
@@ -212,7 +252,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 0.5rem;
-  padding-right: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
 }
 
 .topbar-inner2 {
@@ -398,31 +439,6 @@ html, body {
   margin: 2rem 0 1.5rem;
 }
 
-.floating-home-btn {
-  position: fixed;
-  bottom: 24px;
-  left: 24px;
-  width: 56px;
-  height: 56px;
-  background: var(--btn-bg);
-  color: var(--btn-text);
-  border-radius: 50%;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  z-index: 9999; /* ensures it's above everything */
-  border: none;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-}
-
-.floating-home-btn:hover {
-  background: #0da2b8;
-  color: #fff;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.22);
-}
 
 .about-btn-wrapper {
   display: flex;
@@ -433,9 +449,9 @@ html, body {
 }
 
 .about-btn {
-  width: 80vw;         /* Takes up 60% of the viewport width */
-  max-width: 435px;    /* Optional: limit max size on large screens */
-  min-width: 180px;    /* Optional: minimum size for small screens */
+  width: 80vw;
+  max-width: 435px;
+  min-width: 180px;
   text-align: center;
   font-size: 1.2rem;
   padding: 1em 0;
@@ -446,10 +462,10 @@ html, body {
 
 #scrollTopBtn {
   position: fixed;
-  bottom: 80px;
+  bottom: 60px;
   right: 24px;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border: none;
   border-radius: 50%;
   background: var(--btn-bg);
@@ -464,18 +480,14 @@ html, body {
   align-items: center;
   justify-content: center;
 
-  font-size: 2.2rem;   /* big and bold */
-  line-height: 1;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 #scrollTopBtn::before {
-  content: "⮝";       /* thick, filled arrow */
+  content: "↑";
   display: block;
-}
-
-#scrollTopBtn:hover {
-  background: #4a90e2;
-  color: #fff;
-  transform: translateY(-3px);
+  transform: translateY(-6px);
 }
 
