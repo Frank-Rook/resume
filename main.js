@@ -5,7 +5,8 @@ function updateLanguage(lang) {
   elements.forEach(el => {
     const key = el.getAttribute("data-translate");
     if (translations[lang][key]) {
-      el.textContent = translations[lang][key];
+      // Use innerHTML so links and formatting render
+      el.innerHTML = translations[lang][key];
     }
   });
   localStorage.setItem("preferredLanguage", lang);
@@ -34,7 +35,8 @@ function setLanguage(lang) {
   elements.forEach(el => {
     const key = el.getAttribute("data-translate");
     if (translations[lang] && translations[lang][key]) {
-      el.textContent = translations[lang][key];
+      // Same fix here
+      el.innerHTML = translations[lang][key];
     }
   });
 
