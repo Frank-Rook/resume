@@ -278,22 +278,31 @@ body {
 }
 
 .nav-right .btn,
-.nav-left .btn {
+.nav-left .btn,
+.nav-right_bottom {
     margin-left: 0.5em;
     margin-right: 0.5em;
 }
 
 .nav-right .btn:first-child,
-.nav-left .btn:first-child {
+.nav-left .btn:first-child,
+.nav-right_bottom .btn:first-child {
     margin-left: 0;
 }
 
 .nav-right .btn:last-child,
-.nav-left .btn:last-child {
+.nav-left .btn:last-child
+.nav-right_bottom .btn:last-child {
     margin-right: 0;
 }
 
 .nav-right {
+    justify-content: space-between;
+    width: 100%;
+    gap: 1em;
+}
+
+.nav-right_bottom {
     justify-content: space-evenly;
     width: 100%;
     gap: 1em;
@@ -392,13 +401,14 @@ body {
   border-radius: 8px;
 }
 
-.nav-right, .nav-left {
+.nav-right, .nav-left, .nav-right_bottom {
   display: flex;
   align-items: center;
 }
 
 /* --- Alignment Fix: normalize buttons, flags, and toggle --- */
-.nav-right {
+.nav-right,
+.nav-right_bottom {
   display: flex;
   align-items: center;  
 }
