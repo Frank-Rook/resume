@@ -294,12 +294,11 @@ body {
 }
 
 .nav-right {
-    justify-content: space-between; /* pushes children to far left and right */
+    justify-content: space-evenly;
     width: 100%;
     gap: 1em;
 }
 
-/* For vertical stacking on small screens */
 @media (max-width: 600px) {
     .topbar-inner {
         flex-direction: column;
@@ -310,7 +309,7 @@ body {
         align-items: stretch;
     }
     .nav-right {
-        flex-direction: row !important; /* force horizontal layout */
+        flex-direction: row !important;
         align-items: center;
         justify-content: space-between;
         width: 100%;

@@ -61,7 +61,6 @@ In my free time, I like to work out, train martial arts, and explore new technol
     localStorage.setItem("theme", mode);
   }
 
-  // Load saved theme or default to light
   const savedTheme = localStorage.getItem("theme") || "light";
   setTheme(savedTheme);
 
@@ -70,12 +69,10 @@ In my free time, I like to work out, train martial arts, and explore new technol
     setTheme(newTheme);
   });
 </script>
-<!-- Floating Home Button -->
 </body>
 </html>
 
 <style>
-/* Add this to your main.css or in a <style> block outside the form styles */
 body {
   padding-bottom: 3rem;
 }
